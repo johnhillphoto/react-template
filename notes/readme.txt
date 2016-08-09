@@ -13,3 +13,7 @@ api key
 b789989d44c953ed8aeef9f63764d6a5
 
 git commit -a -m 'update name'
+
+heroku create
+git push heroku master
+heroku open
