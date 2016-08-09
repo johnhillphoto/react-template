@@ -11,3 +11,5 @@ webpack -w
 http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=b789989d44c953ed8aeef9f63764d6a5&units=imperial
 api key
 b789989d44c953ed8aeef9f63764d6a5
+
+git commit -a -m 'update name'

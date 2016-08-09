@@ -1,12 +1,20 @@
 var React = require('react');
 
-var WeatherMessage = React.createClass({
-  render: function () {
-    var {temp, location} = this.props;
-    return (
-      <h3>It is {temp} in {location}</h3>
-    )
-  }
-});
+//following uses explicit es6 destructuring of props
+// var WeatherMessage = (props) => {
+//   var {temp, location} = props;
+//
+//   return (
+//     <h3>It is {temp} in {location}</h3>
+//   )
+// }
+
+//following uses shorthand for deconstructing props
+var WeatherMessage = ({temp, location}) => {
+
+  return (
+    <h3>It is {temp} in {location}</h3>
+  )
+}
 
 module.exports = WeatherMessage;
