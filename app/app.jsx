@@ -8,6 +8,8 @@ var Examples = require('Examples');
 
 //load foundation
 require('style!css!foundation-sites/dist/foundation.min.css');
+require('style!css!react-datepicker/dist/react-datepicker.css');
+
 $(document).foundation();
 
 ReactDOM.render(
