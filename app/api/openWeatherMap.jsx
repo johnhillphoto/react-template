@@ -13,7 +13,8 @@ module.exports = {
         if (res.data.cod && res.data.message){
           throw new Error(res.data.message);
         } else {
-          return res.data.main.temp;
+          var temperature = Math.round(res.data.main.temp);
+          return temperature;
         }
     }, function(res){
       throw new Error(res.data.message);
